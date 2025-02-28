@@ -54,3 +54,19 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/*extra*/
+
+
+#Polaroid {
+    transition: box-shadow 0.3s ease-in;
+
+
+
+
+
+}
+
+#Polaroid:hover {
+    box-shadow: -10px 8px 20px 5px #272525c4;
+}
