@@ -1,4 +1,8 @@
+/*Edu TAS Beginner*/
 @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap');
+/*Sometype Mono’*/
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
 
 /*remove default bootstrap border radius*/
 * {
@@ -14,7 +18,7 @@ header {
 
 #header_title {
     font-family: Edu TAS Beginner;
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 800;
 }
 
@@ -24,4 +28,17 @@ body {
     background-image: url(../img/cork.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/*cards details*/
+
+.photo_date {
+    font-family: Sometype Mono;
+
+}
+
+#Photo_title {
+    font-family: Edu TAS Beginner;
+    font-weight: 800;
+    font-size: 35px;
 }
