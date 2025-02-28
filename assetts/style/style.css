@@ -1,6 +1,24 @@
-header {
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap');
 
+
+
+/*backgrounds*/
+header {
     background-image: url(../img/wall.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header_title {
+    font-family: Edu TAS Beginner;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+
+main {
+
+    background-image: url(../img/cork.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
