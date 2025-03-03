@@ -4,6 +4,7 @@ const cardsRow = document.querySelector(`.container .row`)
 const cardsEndpoint = `https://lanciweb.github.io/demo/api/pictures/`
 const pictureEl = document.querySelector(`.card-img-top`)
 const overLayEl = document.getElementById(`overlay`)
+const overlayBtnoff = document.getElementById(`Closebtn`)
 
 
 fetch(cardsEndpoint)
