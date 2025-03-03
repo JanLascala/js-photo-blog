@@ -49,7 +49,7 @@ fetch(cardsEndpoint)
                 overLayEl.classList.add('d-block');
                 overLayEl.classList.remove(`d-none`)
                 //add imgs 
-
+                photozoomEl.innerText = cardsEndpoint.src
 
 
 
