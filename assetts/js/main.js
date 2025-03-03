@@ -2,11 +2,11 @@ console.log("works fine")
 
 const cardsRow = document.querySelector(`.container .row`)
 const cardsEndpoint = `https://lanciweb.github.io/demo/api/pictures/`
-const pictureEl = document.querySelector(`.card-img-top`)
-
-
 const overLayEl = document.getElementById(`overlay`)
+const allphotos = document.querySelectorAll('.card-img-top');
+const photoEl = document.getElementById(`singlepicture`)
 const overlayBtnoff = document.getElementById(`Closebtn`)
+
 
 
 fetch(cardsEndpoint)
@@ -27,7 +27,7 @@ fetch(cardsEndpoint)
                 `<div class="col-12 col-md-6 col-xl-4">
             <div Id="Polaroid" class="card p-3">
                 <div id="Img_container">
-                    <img  class="card-img-top" src="${singleCardData.url}" />
+                    <img class="card-img-top"  src="${singleCardData.url}" />
                     <img id="RedPin" width="30" src="./assetts/img/pin.svg" alt="red pin">
                 </div>
                 <div class="card-body text-start">
@@ -39,14 +39,26 @@ fetch(cardsEndpoint)
             cardsRow.insertAdjacentHTML(`beforeend`, CardMarkup)
         });
 
+        //overlay function
+        const allphotos = document.querySelectorAll('.card-img-top');
+
+        allphotos.forEach(img => {
+            img.addEventListener('click', function () {
+                overLayEl.classList.add('d-block');
+                overLayEl.classList.remove(`d-none`)
+                //add imgs 
 
 
+
+
+
+            });
+        });
+
+        overlayBtnoff.addEventListener('click', function () {
+            overLayEl.classList.add('d-none');
+        });
     })
-    .catch(Error => {
-
+    .catch(error => {
         console.error(error);
-
-
-    })
-
-
+    });
