@@ -3,6 +3,8 @@ console.log("works fine")
 const cardsRow = document.querySelector(`.container .row`)
 const cardsEndpoint = `https://lanciweb.github.io/demo/api/pictures/`
 const pictureEl = document.querySelector(`.card-img-top`)
+
+
 const overLayEl = document.getElementById(`overlay`)
 const overlayBtnoff = document.getElementById(`Closebtn`)
 
@@ -25,7 +27,7 @@ fetch(cardsEndpoint)
                 `<div class="col-12 col-md-6 col-xl-4">
             <div Id="Polaroid" class="card p-3">
                 <div id="Img_container">
-                    <img class="card-img-top" onclick="on()" src="${singleCardData.url}" />
+                    <img  class="card-img-top" src="${singleCardData.url}" />
                     <img id="RedPin" width="30" src="./assetts/img/pin.svg" alt="red pin">
                 </div>
                 <div class="card-body text-start">
@@ -47,19 +49,4 @@ fetch(cardsEndpoint)
 
     })
 
-/*overlay funtions*/
-
-/*pictureEl.addEventListener(`click`, function () {
-
-    overLayEl.classList.add(`.displayOverlay`)
-})*/
-
-function on() {
-    overLayEl.style.display = "block";
-
-}
-
-function off() {
-    overLayEl.style.display = "none";
-}
 
