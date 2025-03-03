@@ -49,13 +49,8 @@ fetch(cardsEndpoint)
                 overLayEl.classList.add('d-block');
                 overLayEl.classList.remove(`d-none`)
                 //add imgs 
-                for (let i = 0; i < allphotos.length; i++) {
-                    const singlephoto = allphotos[i];
-                    return singlephoto
-                }
 
-                photoEl.innerText = singlephoto
-                photoEl.src = singlephoto.url
+
 
 
 
